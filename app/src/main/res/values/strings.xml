@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Compose101</string>
+
+    <string name="welcome">Welcome to Compose 101</string>
+
+    <string name="week_1">Week 1</string>
 </resources>
