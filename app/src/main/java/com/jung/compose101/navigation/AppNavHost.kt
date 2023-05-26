@@ -26,7 +26,7 @@ fun AppNavHost(navController: NavHostController = rememberNavController()) {
         }
 
         composable(WeekRoute.Week1Screen.route) {
-            Week1()
+            Week1(navBack = { navController.navigateUp() })
         }
     }
 }

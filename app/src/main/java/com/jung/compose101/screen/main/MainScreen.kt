@@ -18,7 +18,9 @@ import com.jung.compose101.navigation.Destination
 import com.jung.compose101.ui.theme.Compose101Theme
 
 @Composable
-fun MainScreen(navigate: (Destination) -> Unit) {
+fun MainScreen(
+    navigate: (Destination) -> Unit,
+) {
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.spacedBy(16.dp, Alignment.CenterVertically),
@@ -37,7 +39,7 @@ fun MainScreen(navigate: (Destination) -> Unit) {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun MainScreenPreview() {
     Compose101Theme {
         MainScreen(navigate = {})
     }
