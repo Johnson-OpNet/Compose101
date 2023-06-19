@@ -13,6 +13,13 @@ https://www.youtube.com/watch?v=0yK7KoruhSM&list=PLWz5rJ2EKKc94tpHND8pW8Qt8ZfT1a
 from 1:00
 https://www.youtube.com/watch?v=OeC5jMV342A&list=PLWz5rJ2EKKc94tpHND8pW8Qt8ZfT1a4cq&index=4
 
+Jetpack Compose ClipToPadding :\
+https://stackoverflow.com/questions/66435811/jetpack-compose-cliptopadding
+
+Jetpack Compose Clipchildren :\
+https://stackoverflow.com/questions/68296439/jetpack-compose-row-clipping-children-when-width-increases \
+```wrapContentSize(unbounded = true)```
+
 ====================================================================================
 
 Week 3 : State, Lifecycle and Side-effects in Compose \
