@@ -31,3 +31,6 @@ https://developer.android.com/jetpack/compose/lifecycle
 
 Side-effects :\
 https://developer.android.com/jetpack/compose/side-effects
+
+```derivedStateOf```\
+https://medium.com/androiddevelopers/jetpack-compose-when-should-i-use-derivedstateof-63ce7954c11b
