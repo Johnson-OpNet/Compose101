@@ -33,4 +33,6 @@ Side-effects :\
 https://developer.android.com/jetpack/compose/side-effects
 
 ```derivedStateOf```\
+Use case key point : Every time you're converting state into a Boolean, consider derivedStateOf could help \
+from 4:44 https://www.youtube.com/watch?v=EOQB8PTLkpY&list=PLWz5rJ2EKKc9Ty3Zl1hvMVUsXfkn93NRk&index=20 \
 https://medium.com/androiddevelopers/jetpack-compose-when-should-i-use-derivedstateof-63ce7954c11b
