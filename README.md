@@ -36,3 +36,47 @@ https://developer.android.com/jetpack/compose/side-effects
 Use case key point : Every time you're converting state into a Boolean, consider derivedStateOf could help \
 from 4:44 https://www.youtube.com/watch?v=EOQB8PTLkpY&list=PLWz5rJ2EKKc9Ty3Zl1hvMVUsXfkn93NRk&index=20 \
 https://medium.com/androiddevelopers/jetpack-compose-when-should-i-use-derivedstateof-63ce7954c11b
+
+====================================================================================
+
+Week 4 : Recomposition
+1. Composition scope :\
+https://www.jetpackcompose.app/articles/donut-hole-skipping-in-jetpack-compose#recomposition \
+Ripple is able to skip recomposition \
+https://dev.to/zachklipp/scoped-recomposition-jetpack-compose-what-happens-when-state-changes-l78
+
+2. Check performance by using ```compose_metrics``` \
+   https://github.com/androidx/androidx/blob/androidx-main/compose/compiler/design/compiler-metrics.md 
+
+   Enabling Metrics
+   ```
+   compileKotlin {
+      freeCompilerArgs += listOf(
+          "-P",
+          "plugin:androidx.compose.compiler.plugins.kotlin:metricsDestination=<directory>"
+      )
+      freeCompilerArgs += listOf(
+          "-P",
+          "plugin:androidx.compose.compiler.plugins.kotlin:reportsDestination=<directory>"
+      )
+   }
+   ```
+   
+   Run the build to check the report (remember to clean before gen the report) \
+   ```
+   ./gradlew clean
+   ./gradlew assembleRelease -Pandroidx.enableComposeCompilerMetrics=true -Pandroidx.enableComposeCompilerReports=true
+   ```
+   https://proandroiddev.com/jetpack-compose-tutorial-improving-performance-in-dribbble-audio-app-b19848cf12e3
+
+3. Stable \
+   https://github.com/androidx/androidx/blob/androidx-main/compose/docs/compose-api-guidelines.md#stable-types
+   https://medium.com/androiddevelopers/jetpack-compose-stability-explained-79c10db270c8
+   https://blog.csdn.net/vitaviva/article/details/126025275
+
+   Immutable List \
+   https://github.com/Kotlin/kotlinx.collections.immutable
+
+4. Modifier recompose improvement \
+   https://www.youtube.com/watch?v=SWBN0y0lFNY&list=PLWz5rJ2EKKc8fZY3smX9CPx9Y_O80ycAd&index=3
+
