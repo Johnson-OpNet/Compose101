@@ -38,6 +38,10 @@ fun MainScreen(
         Button(onClick = { navigate(Destination(WeekRoute.Week3Screen.route)) }) {
             Text(text = stringResource(id = R.string.week_3))
         }
+
+        Button(onClick = { navigate(Destination(WeekRoute.Week4Screen.route)) }) {
+            Text(text = stringResource(id = R.string.week_4))
+        }
     }
 }
 

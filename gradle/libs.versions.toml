@@ -37,6 +37,9 @@ hiltNavigationCompose = "1.0.0"
 # Coroutines
 coroutines = "1.6.4"
 
+# Kotlin Immutable Collections
+immutableCollections = "0.3.5"
+
 # Testing
 junit4 = "4.13.2"
 androidxTestExt = "1.1.5"
@@ -78,6 +81,9 @@ hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-com
 # Coroutines
 coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
 coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
+
+# Kotlin Immutable Collections
+immutable-collections = { group = "org.jetbrains.kotlinx", name = "kotlinx-collections-immutable", version.ref = "immutableCollections" }
 
 # Test
 junit4 = { group = "junit", name = "junit", version.ref = "junit4" }

@@ -16,4 +16,8 @@ sealed interface WeekRoute : Route {
     object Week3Screen : WeekRoute {
         override val route: String = "week_3_route"
     }
+
+    object Week4Screen : WeekRoute {
+        override val route: String = "week_4_route"
+    }
 }

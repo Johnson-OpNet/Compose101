@@ -38,6 +38,13 @@ android {
 
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
+
+        freeCompilerArgs = freeCompilerArgs + listOf(
+            "-P",
+            "plugin:androidx.compose.compiler.plugins.kotlin:metricsDestination=" + project.buildDir.absolutePath + "/compose_metrics")
+        freeCompilerArgs = freeCompilerArgs + listOf(
+            "-P",
+            "plugin:androidx.compose.compiler.plugins.kotlin:reportsDestination="  + project.buildDir.absolutePath + "/compose_metrics")
     }
 
     buildFeatures {
@@ -84,6 +91,9 @@ dependencies {
 
     // Coroutines
     implementation(libs.coroutines.android)
+
+    // Immutable Collections
+    implementation(libs.immutable.collections)
 
     /** Testing Start */
     testImplementation(libs.junit4)

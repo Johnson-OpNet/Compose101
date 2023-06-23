@@ -12,6 +12,8 @@ import com.jung.compose101.screen.main.MainScreen
 import com.jung.compose101.screen.week1.Week1
 import com.jung.compose101.screen.week3.Week3ViewModel
 import com.jung.compose101.screen.week3.Week3v2
+import com.jung.compose101.screen.week4.stabledemo.FriendScreen
+import com.jung.compose101.screen.week4.stabledemo.FriendsViewModel
 
 @Composable
 fun AppNavHost(navController: NavHostController = rememberNavController()) {
@@ -28,6 +30,9 @@ fun AppNavHost(navController: NavHostController = rememberNavController()) {
 
                         WeekRoute.Week3Screen.route ->
                             navController.navigate(WeekRoute.Week3Screen.route)
+
+                        WeekRoute.Week4Screen.route ->
+                            navController.navigate(WeekRoute.Week4Screen.route)
                     }
                 },
             )
@@ -42,6 +47,16 @@ fun AppNavHost(navController: NavHostController = rememberNavController()) {
             val uiState by viewModel.uiStateFlow.collectAsStateWithLifecycle()
 
             Week3v2(
+                uiState = uiState,
+                uiEvent = viewModel::handleEvent,
+            )
+        }
+
+        composable(WeekRoute.Week4Screen.route) {
+            val viewModel: FriendsViewModel = viewModel()
+            val uiState by viewModel.uiStateFlow.collectAsStateWithLifecycle()
+
+            FriendScreen(
                 uiState = uiState,
                 uiEvent = viewModel::handleEvent,
             )
