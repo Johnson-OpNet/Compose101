@@ -70,8 +70,8 @@ https://dev.to/zachklipp/scoped-recomposition-jetpack-compose-what-happens-when-
    https://proandroiddev.com/jetpack-compose-tutorial-improving-performance-in-dribbble-audio-app-b19848cf12e3
 
 3. Stable \
-   https://github.com/androidx/androidx/blob/androidx-main/compose/docs/compose-api-guidelines.md#stable-types
-   https://medium.com/androiddevelopers/jetpack-compose-stability-explained-79c10db270c8
+   https://github.com/androidx/androidx/blob/androidx-main/compose/docs/compose-api-guidelines.md#stable-types \
+   https://medium.com/androiddevelopers/jetpack-compose-stability-explained-79c10db270c8 \
    https://blog.csdn.net/vitaviva/article/details/126025275
 
    Immutable List \
