@@ -62,7 +62,7 @@ https://dev.to/zachklipp/scoped-recomposition-jetpack-compose-what-happens-when-
    }
    ```
    
-   Run the build to check the report (remember to clean before gen the report) \
+   Run the build to check the report (remember to clean before gen the report) 
    ```
    ./gradlew clean
    ./gradlew assembleRelease -Pandroidx.enableComposeCompilerMetrics=true -Pandroidx.enableComposeCompilerReports=true
